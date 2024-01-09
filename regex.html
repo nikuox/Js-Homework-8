@@ -80,7 +80,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
       $(function () {
-        $("input[data-regex]");
+        $("input[data-regex]").keyup(function () {
+          let regType = $(this).attr("data-regex");
+        });
       });
     </script>
   </body>
