@@ -47,7 +47,14 @@
     <div class="form" id="detailStep1">
       <h1>Form Example</h1>
       <label for="fname">First name:</label>
-      <input type="text" id="fname" name="fname" value="" class="input__top" />
+      <input
+        type="text"
+        id="fname"
+        name="fname"
+        value=""
+        class="input__top"
+        data-regex="First-name"
+      />
       <label for="lname" class="second__label">Last name:</label>
       <input type="text" id="lname" name="lname" value="" class="input__top" />
       <label for="email">Email:</label>
@@ -70,5 +77,11 @@
       />
       <button class="btn_submit">Submit</button>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("input[data-regex]");
+      });
+    </script>
   </body>
 </html>
