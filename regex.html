@@ -4,6 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .form {
+        height: 500px;
+        width: 560px;
+        background-color: lightblue;
+        border-radius: 5px;
+        margin: auto;
+        padding: 10px;
+      }
+      h1 {
+        padding-top: 0px;
+      }
+
+      .input__top {
+        border-radius: 5px;
+        border: 1px solid lightblue;
+        outline: 1px solid lightblue;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .form .input__address {
+        height: 30px;
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid lightblue;
+        outline: 1px solid lightblue;
+      }
+      .btn_submit {
+        outline: none;
+        background-color: gray;
+        color: white;
+        border-radius: 5px;
+        width: 70px;
+        height: 30px;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="form" id="detailStep1">
+      <h1>Form Example</h1>
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" value="" class="input__top" />
+      <label for="lname" class="second__label">Last name:</label>
+      <input type="text" id="lname" name="lname" value="" class="input__top" />
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" value="" class="input__top" />
+      <label for="number" class="second__label">Phone Number:</label>
+      <input
+        type="text"
+        id="number"
+        name="number"
+        value=""
+        class="input__top"
+      />
+      <label for="address">Address: </label>
+      <input
+        type="text"
+        id="number"
+        name="number"
+        value=""
+        class="input__address"
+      />
+      <button class="btn_submit">Submit</button>
+    </div>
+  </body>
 </html>
